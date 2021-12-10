@@ -16,7 +16,7 @@ const app = new Vue ({
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((response) => {
                 // handle success
-                    this.emails.push(response.data);
+                    this.emails.push(response.data.response);
             })
             .catch(function (error) {
                 // handle error
